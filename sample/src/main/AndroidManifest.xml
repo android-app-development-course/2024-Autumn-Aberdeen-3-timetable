@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.applandeo.materialcalendarsampleapp">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="true"
+            android:label="Standard calendar" />
+
+        <activity
+            android:name=".CalendarWithCustomRowActivity"
+            android:exported="true"
+            android:label="Standard calendar with custom row" />
+
+        <activity
+            android:name=".OneDayPickerActivity"
+            android:exported="true"
+            android:label="One day picker" />
+
+        <activity
+            android:name=".ManyDaysPickerActivity"
+            android:exported="true"
+            android:label="Many days picker" />
+
+        <activity
+            android:name=".RangePickerActivity"
+            android:exported="true"
+            android:label="Range picker" />
+    </application>
+
+</manifest>
